@@ -4,9 +4,13 @@ WORKDIR /usr/src/app
 
 COPY package.json .
 
-RUN npm install
+COPY .npmrc .
 
-COPY . .
+ARG TOKEN
 
-EXPOSE 8080
-CMD [ "node", "server.js" ]
+RUN npm publish
+
+#COPY . .
+
+#EXPOSE 8080
+#CMD [ "node", "server.js" ]
