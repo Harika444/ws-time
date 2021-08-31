@@ -1,10 +1,6 @@
 {
   "name": "ws-time",
   "version": "VERSION",
-  "scripts": {
-    "preinstall": "npm run co:login",
-    "co:login": "aws codeartifact login --tool npm --repository node --domain daxeos"
-  },
   "dependencies": {
     "express": "^4.17.1",
     "unique-names-generator": "^4.2.0",
