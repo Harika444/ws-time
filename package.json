@@ -1,6 +1,6 @@
 {
   "name": "ws-time",
-  "version": "$BUILD_NUMBER",
+  "version": "VERSION",
   "scripts": {
     "preinstall": "npm run co:login",
     "co:login": "aws codeartifact login --tool npm --repository node --domain daxeos"
